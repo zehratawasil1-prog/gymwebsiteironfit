@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IRONFIT Gym | Train. Transform. Triumph.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">IRON<span>FIT</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Membership</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO IRONFIT</p>
+
+            <h1>
+                BUILD YOUR
+                <span>STRONGER</span>
+                SELF
+            </h1>
+
+            <p>
+                Train smarter. Stay stronger. Become the best version
+                of yourself with our modern fitness facilities and
+                professional trainers.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#plans" class="btn">JOIN NOW</a>
+                <a href="#facilities" class="btn secondary">EXPLORE GYM</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Facilities -->
+    <section id="facilities" class="section">
+
+        <div class="section-heading">
+            <p>OUR FACILITIES</p>
+            <h2>Everything You Need To <span>Get Stronger</span></h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🏋️</div>
+                <h3>Modern Equipment</h3>
+                <p>
+                    High-quality strength and cardio equipment
+                    designed for effective workouts.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏃</div>
+                <h3>Cardio Zone</h3>
+                <p>
+                    Treadmills, cycles and cross trainers for
+                    complete cardio sessions.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🥊</div>
+                <h3>Boxing Area</h3>
+                <p>
+                    Dedicated training space for boxing,
+                    conditioning and combat workouts.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧘</div>
+                <h3>Yoga Studio</h3>
+                <p>
+                    A peaceful space for stretching, yoga
+                    and flexibility training.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="dark-section">
+
+        <div class="section-heading">
+            <p>WHAT WE OFFER</p>
+            <h2>Our <span>Services</span></h2>
+        </div>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>01</h3>
+                <h2>Personal Training</h2>
+                <p>
+                    Get personalized guidance from experienced
+                    fitness trainers.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>02</h3>
+                <h2>Group Workouts</h2>
+                <p>
+                    Stay motivated with energetic group fitness
+                    sessions.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>03</h3>
+                <h2>Fitness Guidance</h2>
+                <p>
+                    Learn safe and effective exercise techniques
+                    for your fitness journey.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Membership Plans -->
+    <section id="plans" class="section">
+
+        <div class="section-heading">
+            <p>MEMBERSHIP</p>
+            <h2>Choose Your <span>Plan</span></h2>
+        </div>
+
+        <div class="pricing">
+
+            <div class="price-card">
+                <h3>BASIC</h3>
+
+                <div class="price">
+                    Rs. 3,000
+                    <small>/month</small>
+                </div>
+
+                <ul>
+                    <li>✓ Gym Access</li>
+                    <li>✓ Cardio Area</li>
+                    <li>✓ Locker Facility</li>
+                    <li>✕ Personal Trainer</li>
+                    <li>✕ Nutrition Guidance</li>
+                </ul>
+
+                <button onclick="joinPlan('Basic')">
+                    Choose Plan
+                </button>
+            </div>
+
+
+            <div class="price-card popular">
+
+                <div class="popular-label">POPULAR</div>
+
+                <h3>PRO</h3>
+
+                <div class="price">
+                    Rs. 5,000
+                    <small>/month</small>
+                </div>
+
+                <ul>
+                    <li>✓ Full Gym Access</li>
+                    <li>✓ Cardio Area</li>
+                    <li>✓ Locker Facility</li>
+                    <li>✓ Group Workouts</li>
+                    <li>✓ Fitness Guidance</li>
+                </ul>
+
+                <button onclick="joinPlan('Pro')">
+                    Choose Plan
+                </button>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <h3>ELITE</h3>
+
+                <div class="price">
+                    Rs. 8,000
+                    <small>/month</small>
+                </div>
+
+                <ul>
+                    <li>✓ Unlimited Gym Access</li>
+                    <li>✓ All Facilities</li>
+                    <li>✓ Personal Trainer</li>
+                    <li>✓ Nutrition Guidance</li>
+                    <li>✓ Premium Support</li>
+                </ul>
+
+                <button onclick="joinPlan('Elite')">
+                    Choose Plan
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trainers -->
+    <section id="trainers" class="dark-section">
+
+        <div class="section-heading">
+            <p>OUR TEAM</p>
+            <h2>Meet Our <span>Trainers</span></h2>
+        </div>
+
+        <div class="trainers">
+
+            <div class="trainer">
+                <div class="trainer-photo">💪</div>
+                <h3>Alex Morgan</h3>
+                <p>Strength Coach</p>
+            </div>
+
+            <div class="trainer">
+                <div class="trainer-photo">🏋️</div>
+                <h3>Sarah Khan</h3>
+                <p>Fitness Trainer</p>
+            </div>
+
+            <div class="trainer">
+                <div class="trainer-photo">🥊</div>
+                <h3>Daniel Lee</h3>
+                <p>Boxing Coach</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>READY TO START YOUR FITNESS JOURNEY?</h2>
+
+        <p>
+            Your stronger future starts with one decision.
+        </p>
+
+        <a href="#plans" class="btn">BECOME A MEMBER</a>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact <span>IRONFIT</span></h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Visit Us</h3>
+                <p>📍 Main Fitness Street, Hyderabad, Pakistan</p>
+
+                <h3>Call Us</h3>
+                <p>📞 +92 3196872860</p>
+
+                <h3>Email</h3>
+                <p>✉️ info@ironfit.com</p>
+
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday: 6:00 AM - 11:00 PM</p>
+
+            </div>
+
+
+            <form onsubmit="submitForm(event)">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    SEND MESSAGE
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo">IRON<span>FIT</span></div>
+
+        <p>
+            © 2026 IRONFIT Gym. All Rights Reserved.
+        </p>
+
+        <p>
+            Train. Transform. Triumph.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
